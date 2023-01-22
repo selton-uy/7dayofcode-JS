@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>MONNI'S SUPERMARKET</h1>
+    
+    </header>
+    <main>
+        <section>
+            <label for="produto">Produto:</label>
+            <input type="text" id="produto" required>
+
+            <label for="categoria">Selecione a categoria:</label>
+            <select name="categoria" id="categoria" aria-placeholder="-Selecione a categoria-" required>
+                <option value="Vegetal">Vegetal</option>
+                <option value="Fruta">Fruta</option>
+                <option value="Verdura">Verdura</option>
+                <option value="Tempero">Tempero</option>
+                <option value="Outros">Outros</option>
+            
+            </select>
+            <button onclick="enviar()">adicionar ao carrinho</button>
+        
+        </section>
+        <div id="carrinho"> 
+            <p>carrinho</p>
+        </div>
+    </main>
+    <footer>
+        &copy MOONI'S SUPERMARKET
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
