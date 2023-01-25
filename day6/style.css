@@ -1,5 +1,6 @@
 body{
     color: white;
+    font-size: 20pt;
 }
 header{
     width: 100%;
@@ -23,6 +24,25 @@ section{
 div{
     height: 300px;
     background: linear-gradient(rgb(26, 176, 126),rgb(3, 79, 54));
+}
+.botao{
+    width: auto;
+    background: #e66c3b;
+    border: none;
+    color: #f5f2f2;
+    font-size: 15pt;
+    display: block;
+    position: relative;
+    margin: 5px;
+    padding: 4px;
+    text-align: center;
+}
+.botao:hover{
+    background-color: #bc4c20;
+}
+.botao:active{
+    border: solid;
+    border-color: #ff3f3f;
 }
 footer{
     text-align: center;
