@@ -4,7 +4,7 @@ let carrinho = [];
 let produtosDoCarrinho = document.getElementById('produtosDoCarrinho')
 
 function mostraCarrinho(){
-    produtosDoCarrinho.innerHTML = carrinho;
+    produtosDoCarrinho.innerHTML = lista;
     console.log(carrinho)
 
 }
@@ -25,10 +25,16 @@ function enviar(){
     }else{
         carrinho.push(produto.value);
         carrinho.push(categoria.value)
-        mostraCarrinho();
+        mostraCarrinhoPlus();
     }
     produto.value = ''
 
+}
+function mostraCarrinhoPlus() {
+    for (let index = 0; index < carrinho.length; index++) {
+        produtosDoCarrinho.innerHTML = carrinho[index]
+    }
+    
 }
 function excluir(){
     carrinho.pop();
